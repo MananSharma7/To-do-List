@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+    />
+    <title>To-do List</title>
+    <style>
+      .completed {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ui container">
+      <h1 class="ui header header-todo">To-do List</h1>
+      <div class="ui grid">
+        <div class="ui five wide column segment">
+          <h2>Add</h2>
+          <div class="ui input input-todo">
+            <input type="text" id="taskInput" placeholder="Enter a task" />
+          </div>
+          <button class="ui yellow button" onclick="addTask()">Add</button>
+        </div>
+        <div class="five wide column ui segment">
+          <h2>Tasks</h2>
+          <ul class="no-bullets" id="taskList"></ul>
+        </div>
+        <div class="five wide column ui segment">
+          <h2>Completed Tasks</h2>
+          <ul class="no-bullets" id="completedTaskList"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <hr style="width: 80%" />
+      <div style="padding: 20px">
+        <p style="font-size: 20px">
+          Made by
+          <a href="https://github.com/MananSharma7">Manan Sharma</a>
+          <i class="github square icon"></i>
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
